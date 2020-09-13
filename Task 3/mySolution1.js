@@ -11,7 +11,7 @@ function add(n) {
 	return function second(b) {
 		if (b === undefined) return sum
 		sum += b
-		return second;
+		return second
 	}
 }
 
