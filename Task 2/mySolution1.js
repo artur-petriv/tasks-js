@@ -6,7 +6,7 @@
 // Моё решение №1
 let arr = ['Brizz', 'Max']
 
-for (let i = 1; i < 101; i++) {
+for (let i = 1; i <= 100; i++) {
 	if (i % 3 === 0 && i % 5 === 0) console.log(arr[0] + arr[1])
 	else if (i % 3 === 0) console.log(arr[0])
 	else if (i % 5 === 0) console.log(arr[1])
