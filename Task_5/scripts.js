@@ -11,4 +11,18 @@ function numbers(arr) {
   );
 }
 
+// Моё решение №2
+function numbers2(arr) {
+  let count = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 0 && arr[i] % 2 !== 0) {
+      count += arr[i];
+    }
+  }
+
+  return count;
+}
+
 console.log(numbers([5, 0, -5, 20, 88, 17, -32])); // 22
+console.log(numbers2([5, 0, -5, 20, 88, 17, -32])); // 22
