@@ -5,7 +5,6 @@
 // и тд
 
 // Моё решение 1
-
 const arr = [51, 8, 99, 71, 2, 35];
 
 function func(arr) {
@@ -17,11 +16,11 @@ function func(arr) {
 }
 
 // Моё решение 2
-
 function func2(arr) {
   for (let i = arr.length - 1; i >= 0; i--) {
     console.log("Под свойством " + i + " лежит значение " + arr[i]);
   }
 }
 
+func(arr);
 func2(arr);
