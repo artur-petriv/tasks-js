@@ -16,4 +16,12 @@ function func(arr) {
   );
 }
 
-func(arr);
+// Моё решение 2
+
+function func2(arr) {
+  for (let i = arr.length - 1; i >= 0; i--) {
+    console.log("Под свойством " + i + " лежит значение " + arr[i]);
+  }
+}
+
+func2(arr);
