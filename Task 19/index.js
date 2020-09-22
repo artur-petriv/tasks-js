@@ -5,11 +5,18 @@
 // Моё решение 1
 
 function getVariants(str) {
-  let arr = [...str];
-  let newArr = [];
+  if (str.length === 1) {
+    return [str];
+  }
 
-  for (let i = 0; i < str.length * 6; i++) {
-    // newArr.push(arr[])
+  let arr = [];
+  for (let i = 0; i < str.length; i++) {
+    const vars = getVariants(str.slice(0, i) + str.slice(i + 1));
+    for (const option of vars) {
+      if (!arr.includes(str[i] + variant)) {
+        arr.push(str[i] + option);
+      }
+    }
   }
 }
 
